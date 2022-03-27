@@ -31,7 +31,7 @@ async def _start(bot: Client, m: Message):
     await AddUserToDatabase(bot, m)
     try:
         await m.reply_text(
-            Config.START_TEXT,
+            Config.START_TEXT.format(name=m.from_user.first_name),
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("Updates", url="https://t.me/REX_BOTZ"), InlineKeyboardButton("Support group", url="https://t.me/REX_Bots_Support")]

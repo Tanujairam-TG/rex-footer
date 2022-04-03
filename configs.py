@@ -14,7 +14,7 @@ class Config(object):
     BOT_OWNER = int(os.environ.get("BOT_OWNER", 1445283714))
     MONGODB_URI = os.environ.get("MONGODB_URI", "")
     START_TEXT = """
-Hi {name} 👋, I am Channel Footer Bot!
+Hi {name} 👋, I am <a href="https://t.me/Footer_rex_bot"><b>Footer bot</b></a>!
 
 I can add footer to Channel Media Messages. Just add me to the channel as Admin with all rights and setup /settings !!
 """

@@ -34,7 +34,7 @@ async def _start(bot: Client, m: Message):
             Config.START_TEXT.format(name=m.from_user.first_name),
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("Updates", url="https://t.me/REX_BOTZ"), InlineKeyboardButton("Support group", url="https://t.me/REX_Bots_Support"), InlineKeyboardButton("Settings", url=f"https://t.me/Footer_rex_bot?start=settings")]
+                    [InlineKeyboardButton("Updates", url="https://t.me/REX_BOTZ"), InlineKeyboardButton("Support group", url="https://t.me/REX_Bots_Support")]
                 ]
             ),
             quote=True
